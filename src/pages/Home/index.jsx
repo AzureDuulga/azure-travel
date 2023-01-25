@@ -4,6 +4,7 @@ import App from "../../Components/App";
 import Banner from "../../Components/Banner";
 import Category from "../../Components/Category";
 import Community from "../../Components/Community";
+import Footer from "../../Components/Footer";
 import DrawerAppBar from "../../Components/Header";
 import OffersItem from "../../Components/Offers/OffersItem";
 import InputWithIcon from "../../Components/Search";
@@ -25,6 +26,7 @@ const Home = () => {
       <Typography>Connect with other travelers in our community</Typography>
       <Community />
       <App />
+      <Footer />
     </>
   );
 };
