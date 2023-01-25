@@ -1,7 +1,9 @@
 import { Typography } from "@mui/material";
 import React from "react";
+import App from "../../Components/App";
 import Banner from "../../Components/Banner";
 import Category from "../../Components/Category";
+import Community from "../../Components/Community";
 import DrawerAppBar from "../../Components/Header";
 import OffersItem from "../../Components/Offers/OffersItem";
 import InputWithIcon from "../../Components/Search";
@@ -20,6 +22,9 @@ const Home = () => {
       <Typography>Offers</Typography>
       <OffersItem />
       <Banner />
+      <Typography>Connect with other travelers in our community</Typography>
+      <Community />
+      <App />
     </>
   );
 };

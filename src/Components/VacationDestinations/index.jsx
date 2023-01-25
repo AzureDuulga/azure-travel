@@ -56,7 +56,7 @@ const VacDestinition = () => {
       }}
     >
       {Destinations.map((item) => (
-        <Box sx={{ display: "flex", gap: "100px" }}>
+        <Box sx={{ gap: "100px" }}>
           <Card sx={{ width: 310, height: 200, marginTop: 5 }}>
             <Box
               minHeight="120px"
