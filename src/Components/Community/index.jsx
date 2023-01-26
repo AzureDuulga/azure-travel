@@ -35,7 +35,6 @@ const Destinations = [
     img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8TW91bnRhaW5zfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
   },
 ];
-
 const Community = () => {
   return (
     <Grid
@@ -46,6 +45,10 @@ const Community = () => {
         },
         display: "flex",
         gap: "20px",
+        marginBottom: "140px",
+        marginTop: "16px",
+        marginLeft: "60px",
+        padding: "20px",
       }}
     >
       {Destinations.map((item) => (
@@ -58,7 +61,7 @@ const Community = () => {
               flexDirection: "column",
               justifyContent: "space-between",
               padding: "16px",
-              boxShadow: "0px 4px 16px 0px #9E9E9E40",
+              boxShadow: " 0px 4px 16px rgba(158, 158, 158, 0.25)",
             }}
           >
             <Box

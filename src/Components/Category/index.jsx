@@ -1,7 +1,5 @@
-import { Grid, SvgIcon, Typography } from "@mui/material";
-import { warning } from "@remix-run/router";
+import { Grid, Typography } from "@mui/material";
 import React from "react";
-import Tropical from "./Tropical";
 const categoryList = [
   {
     name: "Beaches",
@@ -47,19 +45,17 @@ const categoryList = [
 
 const Category = () => {
   return (
-    <Grid
-      sx={{ display: "flex", justifyContent: "space-between" }}
-      bgcolor="red"
-    >
+    <Grid sx={{ display: "flex", justifyContent: "space-between" }}>
       {categoryList.map((categoryList) => {
         return (
           <Grid>
             <img src={categoryList.svg} />
-            <Typography variant="body2">{categoryList.name}</Typography>
+            <Typography sx={{ color: "#ffffff66" }} variant="body2">
+              {categoryList.name}
+            </Typography>
           </Grid>
         );
       })}
-      <Tropical color="red" />
     </Grid>
   );
 };

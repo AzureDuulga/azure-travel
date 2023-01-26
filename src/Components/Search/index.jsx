@@ -14,85 +14,81 @@ import {
 } from "@mui/material";
 
 export default function InputWithIcon() {
-  const theme = createTheme({
-    palette: {
-      primary: {
-        light: "#eeeeee",
-        main: "#000000",
-      },
-    },
-  });
   return (
-    <ThemeProvider theme={theme}>
-      <Container>
-        <Grid
-          container
-          padding={1}
+    <Grid
+      container
+      padding={1}
+      sx={{
+        bgcolor: "#ffffff66",
+        justifyContent: "space-between",
+        borderRadius: "16px",
+        alignItems: "center",
+      }}
+    >
+      <Grid
+        component="form"
+        xs={4}
+        sx={{ "& > :not(style)": { m: 1 } }}
+        noValidate
+        disableUnderline
+        autoComplete="off"
+      >
+        <TextField
+          placeholder="Search destinations, hotels"
+          type="search"
+          variant="standard"
+          fullWidth
+          InputProps={{
+            startAdornment: (
+              <InputAdornment position="start">
+                <SearchIcon />
+              </InputAdornment>
+            ),
+          }}
+        />
+      </Grid>
+      <Grid
+        sx={{
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <CalendarTodayIcon />
+        <Typography variant="body2"> Check in</Typography>
+      </Grid>
+      <Grid
+        sx={{
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <CalendarTodayIcon />
+        <Typography variant="body2">Check out</Typography>
+      </Grid>
+      <Grid
+        sx={{
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <PersonIcon />
+        <Typography variant="body2">1 room, 2 adults</Typography>
+      </Grid>
+      <Grid>
+        <Button
+          variant="contained"
+          disableElevation
           sx={{
-            bgcolor: "primary.light",
-            color: "primary.main",
-            justifyContent: "space-between",
-            borderRadius: "16px",
-            alignItems: "center",
+            borderRadius: "32px",
+            padding: "8px 48px",
+            color: "#2659C3",
+            backgroundColor: "white",
+            fontWeight: 700,
           }}
         >
-          <Grid
-            component="form"
-            xs={4}
-            sx={{ "& > :not(style)": { m: 1 } }}
-            noValidate
-            autoComplete="off"
-          >
-            <TextField
-              placeholder="Search destinations, hotels"
-              type="search"
-              variant="standard"
-              fullWidth
-              InputProps={{
-                startAdornment: (
-                  <InputAdornment position="start">
-                    <SearchIcon />
-                  </InputAdornment>
-                ),
-              }}
-            />
-          </Grid>
-          <Grid
-            sx={{
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            <CalendarTodayIcon />
-            <Typography variant="body2"> Check in</Typography>
-          </Grid>
-          <Grid
-            sx={{
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            <CalendarTodayIcon />
-            <Typography variant="body2">Check out</Typography>
-          </Grid>
-          <Grid
-            sx={{
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            <PersonIcon />
-            <Typography variant="body2">1 room, 2 adults</Typography>
-          </Grid>
-          <Grid>
-            {/* <Stack spacing={5} direction="row"> */}
-            <Button variant="contained" sx={{ borderRadius: "16px" }}>
-              Search
-            </Button>
-            {/* </Stack> */}
-          </Grid>
-        </Grid>
-      </Container>
-    </ThemeProvider>
+          Search
+        </Button>
+      </Grid>
+    </Grid>
   );
 }
