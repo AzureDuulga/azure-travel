@@ -18,6 +18,8 @@ const Banner = () => {
           sx={{
             backgroundImage:
               "url(https://images.unsplash.com/photo-1578894381163-e72c17f2d45f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dHJhdmVsJTIwbWFwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60)",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
             width: "1127px",
             height: "395px",
             backgroundColor: "black",
