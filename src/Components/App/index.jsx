@@ -19,11 +19,14 @@ const Application = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         paddingTop: "87px",
-        // paddingLeft: "134px",
-        // paddingRight: "126px",
       }}
     >
-      <Container maxWidth={"false"} sx={{ display: "flex" }}>
+      <Container
+        sx={{
+          display: "flex",
+          justifyContent: "space-evenly",
+        }}
+      >
         <Box sx={{ alignSelf: "flex-end" }}>
           <img src="./image/iPhone.png" />
         </Box>
