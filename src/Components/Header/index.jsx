@@ -1,5 +1,6 @@
 import { Button, Grid, Box } from "@mui/material";
 import React from "react";
+import AlertDialogSlide from "../../pages/Auth/SignIn/signin";
 
 const headerData = ["Home", "Stays", "Flights", "Packages"];
 
@@ -29,7 +30,7 @@ const Header = () => {
             </Button>
           );
         })}
-        <Button
+        {/* <Button
           sx={{
             marginTop: "24px",
             "&:hover": { textDecoration: "underline" },
@@ -37,7 +38,8 @@ const Header = () => {
           }}
         >
           Sign up
-        </Button>
+        </Button> */}
+        <AlertDialogSlide />
       </Box>
     </Grid>
   );
