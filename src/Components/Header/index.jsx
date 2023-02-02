@@ -1,19 +1,22 @@
-import { Button, Grid, Box } from "@mui/material";
+import { Button, Grid, Box, Modal } from "@mui/material";
 import React from "react";
+import Login from "../../pages/Auth";
 import AlertDialogSlide from "../../pages/Auth/SignIn/signin";
 
 const headerData = ["Home", "Stays", "Flights", "Packages"];
 
-const Header = () => {
+const Header = ({ handleClose, setUser, open }) => {
   return (
     <Grid
       sx={{
         display: "flex",
         justifyContent: "space-between",
         color: "white",
+        position: "absolute",
+        width: "100%",
       }}
     >
-      <Box sx={{ fontSize: 32, fontWeight: 700, marginTop: "24px" }}>
+      <Box sx={{ fontSize: 32, fontWeight: 700, marginTop: "15px" }}>
         trxvl.
       </Box>
       <Box>
@@ -39,7 +42,10 @@ const Header = () => {
         >
           Sign up
         </Button> */}
-        <AlertDialogSlide />
+
+        <Modal open={open} onClose={handleClose}>
+          <Login handleClose={handleClose} setUser={setUser} />
+        </Modal>
       </Box>
     </Grid>
   );

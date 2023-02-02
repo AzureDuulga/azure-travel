@@ -84,7 +84,7 @@ const SignUp = (props) => {
               <Grid item>
                 <Button
                   onClick={() => {
-                    props.setIsSignIn(true);
+                    props.setSignIn(true);
                   }}
                   variant="text"
                 >
