@@ -5,7 +5,7 @@ import AlertDialogSlide from "../../pages/Auth/SignIn/signin";
 
 const headerData = ["Home", "Stays", "Flights", "Packages"];
 
-const Header = ({ handleClose, setUser, open }) => {
+const Header = ({ handleClose, setUser, openModal, handleOpen }) => {
   return (
     <Grid
       sx={{
@@ -43,7 +43,7 @@ const Header = ({ handleClose, setUser, open }) => {
           Sign up
         </Button> */}
 
-        <Modal open={open} onClose={handleClose}>
+        <Modal openModal={openModal} onClose={handleClose}>
           <Login handleClose={handleClose} setUser={setUser} />
         </Modal>
       </Box>
