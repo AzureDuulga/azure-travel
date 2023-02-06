@@ -18,7 +18,7 @@ const offerData = [
 
 const OffersItem = () => {
   return (
-    <Grid sx={{ display: "flex" }}>
+    <Grid sx={{ display: "flex", maxWidth: "80%", margin: "auto" }}>
       {offerData.map((i) => (
         <Card
           sx={{
