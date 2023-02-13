@@ -1,11 +1,14 @@
 import { Button, Grid, Box, Modal } from "@mui/material";
-import React from "react";
+import React, { useContext } from "react";
+import { UserContext } from "../../Context/userContext";
 import Login from "../../pages/Auth";
-import AlertDialogSlide from "../../pages/Auth/SignIn/signin";
+// import AlertDialogSlide from "../../pages/Auth/SignIn/signin";
 
 const headerData = ["Home", "Stays", "Flights", "Packages"];
 
-const Header = ({ handleClose, setUser, openModal, handleOpen }) => {
+const Header = () => {
+  const { openModal, handleClose, handleOpen } = useContext(UserContext);
+
   return (
     <Grid
       sx={{
@@ -33,7 +36,8 @@ const Header = ({ handleClose, setUser, openModal, handleOpen }) => {
             </Button>
           );
         })}
-        {/* <Button
+
+        <Button
           sx={{
             marginTop: "24px",
             "&:hover": { textDecoration: "underline" },
@@ -41,10 +45,9 @@ const Header = ({ handleClose, setUser, openModal, handleOpen }) => {
           }}
         >
           Sign up
-        </Button> */}
-
-        <Modal openModal={openModal} onClose={handleClose}>
-          <Login handleClose={handleClose} setUser={setUser} />
+        </Button>
+        <Modal onClose={handleClose} open={openModal}>
+          <Login handleClose={handleClose} />
         </Modal>
       </Box>
     </Grid>

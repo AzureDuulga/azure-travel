@@ -3,26 +3,16 @@ import Home from "./pages/Home";
 import CssBaseline from "@mui/material/CssBaseline";
 import AuthPage from "./pages/Auth";
 import CardDetail from "./pages/CardDetail";
+import UserProvider from "./Context/userContext";
 
 import React, { useState } from "react";
 
 import Header from "./Components/Header";
 
 function App() {
-  const [user, setUser] = useState(localStorage.getItem("user"));
-  const [openModal, setOpenModal] = useState(false);
-
-  const handleOpen = () => setOpenModal(true);
-  const handleClose = () => setOpenModal(false);
-
   return (
-    <>
-      <Header
-        setUser={setUser}
-        openModal={openModal}
-        handleClose={handleClose}
-        handleOpen={handleOpen}
-      />
+    <UserProvider>
+      <Header />
       <Router>
         <CssBaseline />
         <Routes>
@@ -31,7 +21,7 @@ function App() {
           <Route path="/Card" element={<CardDetail />} />
         </Routes>
       </Router>
-    </>
+    </UserProvider>
   );
 }
 

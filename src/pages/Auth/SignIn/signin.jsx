@@ -13,8 +13,11 @@ import Container from "@mui/material/Container";
 import { Snackbar, Alert } from "@mui/material";
 import { useState } from "react";
 import axios from "axios";
+import { useContext } from "react";
+import { UserContext } from "../../../Context/userContext";
 
-const Signin = ({ setSignIn, setUser, handleClose }) => {
+const Signin = ({ setSignIn, handleClose }) => {
+  const { setUser } = useContext(UserContext);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 

@@ -8,11 +8,7 @@ const Login = ({ handleClose, setUser }) => {
   return (
     <>
       {isSignIn ? (
-        <Signin
-          setSignIn={setSignIn}
-          setUser={setUser}
-          handleClose={handleClose}
-        />
+        <Signin setSignIn={setSignIn} handleClose={handleClose} />
       ) : (
         <SignUp setSignIn={setSignIn} />
       )}
