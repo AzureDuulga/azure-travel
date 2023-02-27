@@ -36,7 +36,15 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="absolute" color="transparent" variant="elevation0">
+    <AppBar
+      position="absolute"
+      color="transparent"
+      variant="elevation0"
+      sx={{
+        display: "flex",
+        justifyContent: "space-between",
+      }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -78,7 +86,7 @@ function Navbar() {
               keepMounted
               transformOrigin={{
                 vertical: "top",
-                horizontal: "left",
+                horizontal: "right",
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
@@ -115,8 +123,7 @@ function Navbar() {
           <Box
             sx={{
               display: "flex",
-              justifyContent: "flex-end",
-              background: "black",
+              justifyContent: "flex-between",
             }}
           >
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
@@ -124,7 +131,7 @@ function Navbar() {
                 <Button
                   key={page}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "white", display: "block" }}
+                  sx={{ my: 2, color: "white" }}
                 >
                   {page}
                 </Button>
@@ -132,7 +139,10 @@ function Navbar() {
             </Box>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar
+                  alt="Duulga Enkhtur"
+                  src="/static/images/avatar/2.jpg"
+                />
               </IconButton>
             </Tooltip>
             <Menu
