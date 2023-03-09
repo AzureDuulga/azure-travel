@@ -56,11 +56,17 @@ const OffersItem = () => {
               justifyContent: "center",
             }}
           >
-            <Typography sx={{ fontSize: "16px", color: "#00000080" }}>
+            <Typography
+              key={i.type}
+              sx={{ fontSize: "16px", color: "#00000080" }}
+            >
               {i.type}
             </Typography>
             <Typography sx={{ fontSize: "24px" }}>{i.title}</Typography>
-            <Typography sx={{ fontSize: "16px", color: "#00000080" }}>
+            <Typography
+              key={i.detail}
+              sx={{ fontSize: "16px", color: "#00000080" }}
+            >
               {i.detail}
             </Typography>
             <Button

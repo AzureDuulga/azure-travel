@@ -28,10 +28,16 @@ const Banner = () => {
             paddingLeft: "80px",
           }}
         >
-          <Typography sx={{ color: "white", fontSize: "56px" }}>
+          <Typography
+            key={bannerData.title}
+            sx={{ color: "white", fontSize: "56px" }}
+          >
             {bannerData.title}
           </Typography>
-          <Typography sx={{ color: "white", fontSize: "32px" }}>
+          <Typography
+            key={bannerData.detail}
+            sx={{ color: "white", fontSize: "32px" }}
+          >
             {bannerData.detail}
           </Typography>
         </Grid>

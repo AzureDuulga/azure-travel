@@ -50,7 +50,11 @@ const Category = () => {
         return (
           <Grid>
             <img src={categoryList.svg} />
-            <Typography sx={{ color: "#ffffff66" }} variant="body2">
+            <Typography
+              key={categoryList.name}
+              sx={{ color: "#ffffff66" }}
+              variant="body2"
+            >
               {categoryList.name}
             </Typography>
           </Grid>

@@ -11,7 +11,9 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
+import SingUpButton from "./SingIn/signup";
 import SinginButtonNav from "./SingIn";
+
 const pages = ["Home", "Stays", "Flights", "Packages"];
 const settings = ["Home", "Stays", "Flights", "Packages"];
 
@@ -34,17 +36,12 @@ function Navbar() {
     setAnchorElUser(null);
   };
 
-  //IsLogged 
+  //IsLogged
 
-  const [isLogged, setIsLogged]=React.useState(false)
+  const [isLogged, setIsLogged] = React.useState(false);
 
   return (
-    <AppBar
-      position="absolute"
-      color="transparent"
-      variant="elevation0"
-    >
-      
+    <AppBar position="absolute" color="transparent" variant="elevation0">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -91,7 +88,7 @@ function Navbar() {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" }
+                display: { xs: "block", md: "none" },
               }}
             >
               {pages.map((page) => (
@@ -137,19 +134,19 @@ function Navbar() {
                 </Button>
               ))}
             </Box>
-            {isLogged ?         
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar
-                  alt="Duulga Enkhtur"
-                  src="/static/images/avatar/2.jpg"
-                />
-              </IconButton>
-            </Tooltip>
-            :
-            <SinginButtonNav/>
-            }
-   
+            {isLogged ? (
+              <Tooltip title="Open settings">
+                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                  <Avatar
+                    alt="Duulga Enkhtur"
+                    src="/static/images/avatar/2.jpg"
+                  />
+                </IconButton>
+              </Tooltip>
+            ) : (
+              <SinginButtonNav />
+            )}
+
             <Menu
               sx={{ mt: "45px" }}
               id="menu-appbar"

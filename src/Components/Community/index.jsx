@@ -76,6 +76,7 @@ const Community = () => {
               />
             </Box>
             <Typography
+              key={item.title}
               style={{
                 left: 24,
                 top: 146,

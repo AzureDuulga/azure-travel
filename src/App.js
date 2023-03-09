@@ -16,7 +16,7 @@ function App() {
       <Router>
         <CssBaseline />
         <Routes>
-          <Route path="/login" element={<AuthPage />} />
+          {/* <Route path="/login" element={<AuthPage />} /> */}
           <Route path="/" element={<Home />} />
           <Route path="/Card" element={<CardDetail />} />
         </Routes>

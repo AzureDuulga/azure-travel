@@ -6,7 +6,6 @@ import Banner from "../../Components/Banner";
 import Category from "../../Components/Category";
 import Community from "../../Components/Community";
 import Footer from "../../Components/Footer";
-import Header from "../../Components/Header";
 import OffersItem from "../../Components/Offers/OffersItem";
 import InputWithIcon from "../../Components/Search";
 import VacDestinition from "../../Components/VacationDestinations";

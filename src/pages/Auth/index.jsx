@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Signin from "./SignIn/signin";
-
 import SignUp from "./SignUp";
 
 const Login = ({ handleClose, setUser }) => {
