@@ -1,12 +1,9 @@
 import * as React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Box, Card, Grid, Typography } from "@mui/material";
-import CountryList from "./CountryList";
 
 const Destinations = [
   {
@@ -66,6 +63,7 @@ const VacDestinition = () => {
               <img
                 src={item.img}
                 style={{ maxHeight: "100%", maxWidth: "100%" }}
+                alt={item.title}
               />
               <Typography
                 style={{

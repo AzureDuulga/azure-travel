@@ -1,4 +1,5 @@
 import * as React from "react";
+// import {AppBar,Box} from "@mui/material"
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -11,7 +12,6 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import SingUpButton from "./SingIn/signup";
 import SinginButtonNav from "./SingIn";
 
 const pages = ["Home", "Stays", "Flights", "Packages"];

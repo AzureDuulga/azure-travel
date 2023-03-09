@@ -1,12 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import CssBaseline from "@mui/material/CssBaseline";
-import AuthPage from "./pages/Auth";
+// import AuthPage from "./pages/Auth";
 import CardDetail from "./pages/CardDetail";
 import UserProvider from "./Context/userContext";
-
-import React, { useState } from "react";
-
 import Navbar from "./Components/Header/navbar";
 
 function App() {

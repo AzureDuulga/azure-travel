@@ -73,6 +73,7 @@ const Community = () => {
               <img
                 src={item.img}
                 style={{ maxHeight: "100%", maxWidth: "100%", borderRadius: 8 }}
+                alt={item.title}
               />
             </Box>
             <Typography

@@ -49,7 +49,7 @@ const Category = () => {
       {categoryList.map((categoryList) => {
         return (
           <Grid>
-            <img src={categoryList.svg} />
+            <img src={categoryList.svg} alt={categoryList.name}/>
             <Typography
               key={categoryList.name}
               sx={{ color: "#ffffff66" }}

@@ -7,10 +7,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import {
   Grid,
   Typography,
-  ThemeProvider,
-  createTheme,
   Button,
-  Container,
 } from "@mui/material";
 
 export default function InputWithIcon() {

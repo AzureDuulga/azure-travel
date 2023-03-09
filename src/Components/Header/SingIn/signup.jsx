@@ -5,7 +5,6 @@ import {
   FormControlLabel,
   Checkbox,
   Grid,
-  Link,
   Avatar,
   Typography,
 } from "@mui/material";

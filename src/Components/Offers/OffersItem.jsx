@@ -47,6 +47,7 @@ const OffersItem = () => {
                 maxWidth: "100%",
                 borderRadius: "16px",
               }}
+              alt={offerData.title}
             ></img>
           </Box>
           <Grid

@@ -4,7 +4,6 @@ import {
   Typography,
   Button,
   TextField,
-  MenuItem,
   Container,
 } from "@mui/material";
 import React from "react";
@@ -28,7 +27,7 @@ const Application = () => {
         }}
       >
         <Box sx={{ alignSelf: "flex-end" }}>
-          <img src="./image/iPhone.png" />
+          <img src="./image/iPhone.png" alt="Iphone" />
         </Box>
         <Box
           sx={{
@@ -163,8 +162,8 @@ const Application = () => {
                 justifyContent: "space-between",
               }}
             >
-              <img src="./image/playstore.png" />
-              <img src="./image/appstore.png" />
+              <img src="./image/playstore.png" alt="playstore"/>
+              <img src="./image/appstore.png"  alt="appstore"/>
             </Box>
           </Box>
         </Box>
