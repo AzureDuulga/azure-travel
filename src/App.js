@@ -7,7 +7,6 @@ import UserProvider from "./Context/userContext";
 
 import React, { useState } from "react";
 
-import Header from "./Components/Header";
 import Navbar from "./Components/Header/navbar";
 
 function App() {
