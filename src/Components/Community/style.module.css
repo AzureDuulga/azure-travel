@@ -1,0 +1,23 @@
+.Card {
+  width: "342px";
+  height: "343px";
+  display: "flex";
+  flex-direction: "column";
+  justify-content: "space-between";
+  padding: 16px;
+  box-shadow: 0px 4px 16px rgba(158, 158, 158, 0.25);
+}
+.Box {
+  height: 200px;
+  width: 310px;
+}
+.TextTitle {
+  left: 24px;
+  top: 146px;
+  color: "black";
+  font-size: 24px;
+}
+.Text {
+  color: #00000080;
+  font-size: 16px;
+}

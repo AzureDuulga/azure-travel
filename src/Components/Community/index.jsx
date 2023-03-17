@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Box, Card, Grid, Typography } from "@mui/material";
+import css from "./style.module.css";
 
 const Destinations = [
   {
@@ -53,46 +54,19 @@ const Community = () => {
     >
       {Destinations.map((item) => (
         <Box>
-          <Card
-            sx={{
-              width: "342px",
-              height: "343px",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
-              padding: "16px",
-              boxShadow: " 0px 4px 16px rgba(158, 158, 158, 0.25)",
-            }}
-          >
-            <Box
-              sx={{
-                height: "200px",
-                width: "310px",
-              }}
-            >
+          <Card className={css.Card}>
+            <Box className={css.Box}>
               <img
                 src={item.img}
                 style={{ maxHeight: "100%", maxWidth: "100%", borderRadius: 8 }}
                 alt={item.title}
               />
             </Box>
-            <Typography
-              key={item.title}
-              style={{
-                left: 24,
-                top: 146,
-                color: "black",
-                fontSize: 24,
-              }}
-            >
+            <Typography key={item.title} className={css.TextTitle}>
               {item.title}
             </Typography>
-            <Typography sx={{ color: "#00000080", fontSize: "16px" }}>
-              Travel community
-            </Typography>
-            <Typography sx={{ color: "#00000080", fontSize: "16px" }}>
-              155,073 travelers
-            </Typography>
+            <Typography className={css.Text}>Travel community</Typography>
+            <Typography className={css.Text}>155,073 travelers</Typography>
           </Card>
         </Box>
       ))}

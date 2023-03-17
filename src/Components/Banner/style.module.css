@@ -1,0 +1,18 @@
+.Banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 395px;
+  background-color: black;
+  border-radius: 24px;
+  padding-top: 80px;
+  padding-left: 80px;
+  background-image: url("https://images.unsplash.com/photo-1578894381163-e72c17f2d45f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dHJhdmVsJTIwbWFwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
+}
+.Title {
+  color: "white";
+  font-size: 56px;
+}
+.Text {
+  color: "white";
+  font-size: 32px;
+}
