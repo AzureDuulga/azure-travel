@@ -4,11 +4,7 @@ import TextField from "@mui/material/TextField";
 import SearchIcon from "@mui/icons-material/Search";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import PersonIcon from "@mui/icons-material/Person";
-import {
-  Grid,
-  Typography,
-  Button,
-} from "@mui/material";
+import { Grid, Typography, Button } from "@mui/material";
 
 export default function InputWithIcon() {
   return (
@@ -50,7 +46,8 @@ export default function InputWithIcon() {
           alignItems: "center",
         }}
       >
-        <CalendarTodayIcon />
+        {/* <CalendarTodayIcon /> */}
+        {/* <input type="date" id="date"> */}
         <Typography variant="body2"> Check in</Typography>
       </Grid>
       <Grid
