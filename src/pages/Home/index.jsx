@@ -9,27 +9,13 @@ import Footer from "../../Components/Footer";
 import OffersItem from "../../Components/Offers/OffersItem";
 import InputWithIcon from "../../Components/Search";
 import VacDestinition from "../../Components/VacationDestinations";
+import css from "./style.module.css";
 
 const Home = () => {
   return (
     <Box sx={{ color: "white", fontWeight: 700 }}>
-      <Box
-        sx={{
-          height: "840px",
-          width: "100%",
-          background:
-            "linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 13.65%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./image/motoMountain.png);",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          paddingTop: "95px",
-        }}
-      >
-        <Box
-          sx={{
-            background:
-              "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 89.58%)",
-          }}
-        ></Box>
+      <Box className={css.ImgBackground}>
+        <Box className={css.GradientBackground}></Box>
         <Container maxWidth="xl">
           <Typography sx={{ fontSize: 72, width: "50%" }}>
             The whole world awaits.

@@ -1,5 +1,6 @@
 import { Box, Button, Card, Typography, Grid } from "@mui/material";
 import React from "react";
+import css from "./style.module.css";
 
 const offerData = [
   {
@@ -18,45 +19,13 @@ const offerData = [
 
 const OffersItem = () => {
   return (
-    <Grid sx={{ display: "flex", maxWidth: "80%", margin: "auto" }}>
+    <Grid className={css.OfferContainer}>
       {offerData.map((i) => (
-        <Card
-          sx={{
-            width: 660,
-            height: 240,
-            borderRadius: "16px",
-            display: "flex",
-            marginRight: "24px",
-            paddingLeft: "16px",
-            paddingBottom: "24px",
-            paddingTop: "24px",
-            boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
-          }}
-        >
-          <Box
-            sx={{
-              width: 310,
-              height: 210,
-              marginRight: "24px",
-            }}
-          >
-            <img
-              src={i.img}
-              style={{
-                maxHeight: "100%",
-                maxWidth: "100%",
-                borderRadius: "16px",
-              }}
-              alt={offerData.title}
-            ></img>
+        <Card className={css.CardItem}>
+          <Box className={css.ImgBox}>
+            <img className={css.Img} src={i.img} alt={offerData.title}></img>
           </Box>
-          <Grid
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-            }}
-          >
+          <Grid className={css.TextGrid}>
             <Typography
               key={i.type}
               sx={{ fontSize: "16px", color: "#00000080" }}
@@ -70,19 +39,7 @@ const OffersItem = () => {
             >
               {i.detail}
             </Typography>
-            <Button
-              sx={{
-                backgroundColor: "#2659C3",
-                color: "white",
-                borderRadius: "32px",
-                fontSize: "16px",
-                width: "140px",
-                height: "52px",
-                textTransform: "capitalize",
-              }}
-            >
-              Book Now
-            </Button>
+            <Button className={css.Btn}>Book Now</Button>
           </Grid>
         </Card>
       ))}

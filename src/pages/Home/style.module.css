@@ -1,0 +1,19 @@
+.ImgBackground {
+  height: 840px;
+  width: 100%;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0) 13.65%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../../../public/image/motoMountain.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 95px;
+}
+.GradientBackground {
+  background: linear-gradient(
+    180deg; rgba(255; 255; 255; 0) 0%; #ffffff 89.58%
+  );
+}

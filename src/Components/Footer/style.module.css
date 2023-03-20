@@ -1,0 +1,29 @@
+.Background {
+  background-color: #141414;
+  height: 288px;
+  padding-top: 42px;
+  display: flex;
+}
+.BoxLogo {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  width: 20%;
+  text-align: center;
+}
+.Grid {
+  display: flex;
+  color: #808080;
+  justify-content: space-evenly;
+  width: 80%;
+}
+.HelmetKod {
+  border: 1px solid white;
+  text-align: center;
+  padding: 10px 15px;
+}
+.BoxTexts {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
