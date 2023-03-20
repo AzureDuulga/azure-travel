@@ -39,7 +39,9 @@ const OffersItem = () => {
             >
               {i.detail}
             </Typography>
-            <Button className={css.Btn}>Book Now</Button>
+            <Button variant="contained" className={css.Btn}>
+              Book Now
+            </Button>
           </Grid>
         </Card>
       ))}
